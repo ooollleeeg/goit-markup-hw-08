@@ -1,0 +1,36 @@
+.agreement-link {
+  color: var(--brandcolor);
+  text-decoration-line: underline;
+}
+.checkbox-field {
+  margin-bottom: 30px;
+}
+
+.checkbox-wrap {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--textcolor);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition1);
+  &:hover {
+    border-color: var(--brandcolor);
+  }
+  .checkbox-input:checked + .check-text & {
+    background-color: var(--brandcolor);
+    border: none;
+  }
+  .checkbox-input:focus + .check-text & {
+    border-color: var(--brandcolor);
+  }
+}
+
+.check-text {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

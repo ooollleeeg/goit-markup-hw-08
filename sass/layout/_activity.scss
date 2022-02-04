@@ -1,0 +1,19 @@
+.activity {
+  padding-top: 0;
+  --card-amt: 3;
+}
+
+.activity__item {
+  position: relative;
+}
+.activity__text {
+  @include font(14px, null, 1.14, 00.03em);
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  padding: 27px;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--item-background);
+  color: var(--whitetextcolor);
+}

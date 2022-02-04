@@ -1,0 +1,13 @@
+.about-list__title {
+  @include font(14px, null, 1.14, null);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-list__icon {
+  background-color: var(--backgroundcolor2);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 25px 100px;
+}

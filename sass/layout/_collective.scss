@@ -1,0 +1,26 @@
+.collective {
+  background-color: var(--backgroundcolor2);
+}
+
+.collective__item {
+  @include font(16px, null, 1.19, 0.03em);
+  text-align: center;
+  background-color: var(--whitetextcolor);
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+.collective__member {
+  @include font(16px, 500, null, null);
+  color: var(--textcolor);
+  margin-bottom: 10px;
+}
+
+.collective-caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.collective__prof {
+  margin-bottom: 16px;
+}

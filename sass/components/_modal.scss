@@ -1,0 +1,50 @@
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.3);
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--whitetextcolor);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: transform var(--transition1);
+  padding: 40px;
+}
+.close__icon {
+  transition: fill var(--transition1);
+  .close-btn:focus &,
+  .close-btn:hover & {
+    fill: var(--brandcolor);
+  }
+}
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition: border-color var(--transition1);
+  outline: none;
+  &:focus,
+  &:hover {
+    border-color: var(--brandcolor);
+  }
+}
+
+.modal__text {
+  text-align: center;
+  @include font(20px, 700, 1.15, null);
+  color: var(--textcolor);
+  margin-bottom: 12px;
+}

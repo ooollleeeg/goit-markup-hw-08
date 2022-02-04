@@ -1,0 +1,70 @@
+.head {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  align-items: center;
+}
+.site-navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.contakts-list {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-navigation__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contakts-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.site-navigation__list {
+  color: var(--textcolor);
+}
+
+.site-navigation__link {
+  @include font(14px, 500, 1.14, 0.02em);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition1);
+  &:hover,
+  &:focus {
+    color: var(--brandcolor);
+  }
+}
+.current {
+  color: var(--brandcolor);
+  position: relative;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--brandcolor);
+    margin-bottom: -1px;
+  }
+}
+
+.contakts-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

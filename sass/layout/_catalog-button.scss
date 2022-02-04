@@ -1,0 +1,31 @@
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn-list__item {
+  min-width: 73px;
+  min-height: 38px;
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.btn-list__button {
+  font-family: inherit;
+  background-color: var(--backgroundcolor2);
+  cursor: pointer;
+  @include font(16px, 500, 1.63, 0.03em);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: color var(--transition1), box-shadow var(--transition1),
+    background-color var(--transition1);
+  &:hover,
+  &:focus,
+  &--current {
+    background-color: var(--brandcolor);
+    color: var(--whitetextcolor);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}

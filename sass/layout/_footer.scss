@@ -1,0 +1,70 @@
+.foot {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--backgroundcolor);
+  color: var(--whitetextcolor);
+  margin: 0 auto;
+}
+
+.adrs {
+  font-style: normal;
+}
+.adrs__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adrs__link[target='_blank'] {
+  color: var(--whitetextcolor);
+}
+
+.adrs__link {
+  color: var(--footaddresscolor);
+  transition: color var(--transition1);
+  &:hover,
+  &:focus {
+    color: var(--brandcolor);
+  }
+}
+.foot__title {
+  color: var(--whitetextcolor);
+  margin-bottom: 20px;
+}
+.foot-container {
+  display: flex;
+  align-items: baseline;
+}
+.foot__item {
+  &:last-child {
+    margin-left: auto;
+  }
+  &:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+.subscription {
+  display: flex;
+}
+.subscription__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--footborderformcolor);
+  border-radius: 4px;
+  padding-left: 16px;
+  color: var(--whitetextcolor);
+  background-color: transparent;
+  @include font(16px, null, 1.25, 0.03em);
+  margin-right: 12px;
+  transition: border-color var(--transition1);
+  outline: none;
+  &::placeholder {
+    color: var(--footaddresscolor);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--brandcolor);
+  }
+}
+
+.subscription__icon {
+  margin-left: 10px;
+}
