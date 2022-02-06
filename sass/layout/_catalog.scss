@@ -1,3 +1,14 @@
+.catalog {
+  padding-top: 0;
+  padding-bottom: 20px;
+  --card-amt: 3;
+  @media screen and (max-width: 767px) {
+    --card-amt: 1;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    --card-amt: 2;
+  }
+}
 .catalog-item__title {
   @include font(18px, null, 2, 0.06em);
   margin-bottom: 4px;
@@ -5,12 +16,6 @@
 
 .catalog-item__product {
   @include font(16px, null, 1.87, null);
-}
-
-.catalog {
-  padding-top: 0;
-  padding-bottom: 20px;
-  --card-amt: 3;
 }
 
 .catalog-item__wrap {

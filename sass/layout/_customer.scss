@@ -1,5 +1,11 @@
 .customer {
   --card-amt: 6;
+  @media screen and (max-width: 767px) {
+    --card-amt: 2;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    --card-amt: 3;
+  }
 }
 
 .customer__icon {

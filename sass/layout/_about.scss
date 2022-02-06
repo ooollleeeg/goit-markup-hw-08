@@ -1,3 +1,11 @@
+.about {
+  @media screen and (max-width: 767px) {
+    --card-amt: 1;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    --card-amt: 2;
+  }
+}
 .about-list__title {
   @include font(14px, null, 1.14, null);
   text-transform: uppercase;

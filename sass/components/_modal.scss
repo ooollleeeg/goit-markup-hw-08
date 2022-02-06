@@ -3,7 +3,7 @@
 }
 
 .modal {
-  width: 528px;
+  width: 90vw;
   min-height: 581px;
   background-color: var(--whitetextcolor);
   position: absolute;
@@ -14,6 +14,12 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: transform var(--transition1);
   padding: 40px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 .close__icon {
   transition: fill var(--transition1);

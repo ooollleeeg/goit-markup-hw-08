@@ -1,5 +1,11 @@
 .collective {
   background-color: var(--backgroundcolor2);
+  @media screen and (max-width: 767px) {
+    --card-amt: 1;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    --card-amt: 2;
+  }
 }
 
 .collective__item {
@@ -20,6 +26,9 @@
 .collective-caption {
   padding-top: 30px;
   padding-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 24px;
+  }
 }
 .collective__prof {
   margin-bottom: 16px;
