@@ -3,18 +3,39 @@
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  @include mindesk {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
+    url(../images/header/header_mob_1x.jpg);
+  @include ratio2 {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header/header_mob_2x.jpg);
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover, auto;
-  max-width: 1600px;
   margin: 0 auto;
+
+  @include tab {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header/header_tab_1x.jpg);
+    @include ratio2 {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header/header_tab_2x.jpg);
+    }
+  }
+
+  @include mindesk {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header/header_desk_1x.jpg);
+    @include ratio2 {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header/header_desk_2x.jpg);
+    }
+    max-width: 1600px;
+  }
 }
+
 .hero__title {
   @include font(26px, 900, 1.62, 0.06em);
   text-transform: uppercase;
