@@ -60,7 +60,6 @@
   }
 }
 .subscription__input {
-  width: 358px;
   height: 50px;
   border: 1px solid var(--footborderformcolor);
   border-radius: 4px;
@@ -81,6 +80,15 @@
   }
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
+    width: 450px;
+  }
+  @media screen and (max-width: 479px) {
+    margin-bottom: 20px;
+    width: 90vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
