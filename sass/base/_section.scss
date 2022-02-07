@@ -1,18 +1,18 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  @include maxtab {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mindesk {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .section-title {
-  @include font(36px, null, 1.17, null);
+  @include font(28px, null, 1.17, null);
   text-align: center;
   color: var(--textcolor);
-  margin-bottom: 50px;
-  @include maxtab {
-    @include font(28px, null, null, null);
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  @include mindesk {
+    @include font(36px, null, null, null);
+    margin-bottom: 50px;
   }
 }

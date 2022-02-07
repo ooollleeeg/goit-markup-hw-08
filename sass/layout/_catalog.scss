@@ -1,12 +1,11 @@
 .catalog {
   padding-top: 0;
   padding-bottom: 20px;
-  --card-amt: 3;
-  @include maxtel {
-    --card-amt: 1;
-  }
   @include tab {
     --card-amt: 2;
+  }
+  @include mindesk {
+    --card-amt: 3;
   }
 }
 .catalog-item__title {

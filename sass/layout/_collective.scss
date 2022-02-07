@@ -1,10 +1,10 @@
 .collective {
   background-color: var(--backgroundcolor2);
-  @include maxtel {
-    --card-amt: 1;
-  }
   @include tab {
     --card-amt: 2;
+  }
+  @include mindesk {
+    --card-amt: 4;
   }
 }
 
@@ -25,9 +25,9 @@
 
 .collective-caption {
   padding-top: 30px;
-  padding-bottom: 30px;
- @include maxtab {
-    padding-bottom: 24px;
+  padding-bottom: 24px;
+  @include mindesk {
+    padding-bottom: 30px;
   }
 }
 .collective__prof {

@@ -1,7 +1,17 @@
 .btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  @include tab {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include mindesk {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 .btn-list__item {
   min-width: 73px;
@@ -9,6 +19,9 @@
   border-radius: 4px;
   &:not(:last-child) {
     margin-right: 8px;
+  }
+  @include maxtel {
+    margin-bottom: 15px;
   }
 }
 .btn-list__button {

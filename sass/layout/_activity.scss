@@ -1,6 +1,10 @@
 .activity {
-  padding-top: 0;
-  --card-amt: 3;
+  display: none;
+  @include mindesk {
+    display: block;
+    padding-top: 0;
+    --card-amt: 3;
+  }
 }
 
 .activity__item {

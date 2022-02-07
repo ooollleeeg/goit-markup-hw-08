@@ -1,4 +1,7 @@
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   @include mintel {
     width: 480px;
   }
@@ -8,7 +11,4 @@
   @include mindesk {
     width: 1200px;
   }
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }

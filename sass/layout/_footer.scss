@@ -35,6 +35,10 @@
 .foot__title {
   color: var(--whitetextcolor);
   margin-bottom: 20px;
+  text-align: center;
+  @include mindesk {
+    text-align: left;
+  }
 }
 
 .foot__item {
@@ -78,10 +82,9 @@
   &:focus {
     border-color: var(--brandcolor);
   }
-  @include maxtab {
-    margin-bottom: 20px;
-    width: 450px;
-  }
+  margin-bottom: 20px;
+  width: 450px;
+
   @include aftmintel {
     margin-bottom: 20px;
     width: 90vw;
@@ -89,6 +92,7 @@
 
   @include mindesk {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 

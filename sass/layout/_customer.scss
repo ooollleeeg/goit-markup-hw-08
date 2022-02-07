@@ -1,10 +1,12 @@
 .customer {
-  --card-amt: 6;
   @include tel {
     --card-amt: 2;
   }
- @include tab {
+  @include tab {
     --card-amt: 3;
+  }
+  @include mindesk {
+    --card-amt: 6;
   }
 }
 
