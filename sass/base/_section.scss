@@ -1,7 +1,7 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  @media screen and (max-width: 1199px) {
+  @include maxtab {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -11,7 +11,7 @@
   text-align: center;
   color: var(--textcolor);
   margin-bottom: 50px;
-  @media screen and (max-width: 1199px) {
+  @include maxtab {
     @include font(28px, null, null, null);
     margin-bottom: 30px;
   }

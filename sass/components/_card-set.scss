@@ -1,5 +1,5 @@
 .card-set {
-  @media screen and (min-width: 480px) {
+  @include mintel {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -7,7 +7,7 @@
   margin-bottom: -30px;
 }
 .card-set__item {
-  @media screen and (min-width: 480px) {
+  @include mintel {
     flex-basis: calc(100% / var(--card-amt) - 30px);
     margin-left: 30px;
   }

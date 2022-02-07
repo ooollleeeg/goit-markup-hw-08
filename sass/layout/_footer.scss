@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 .foot-container {
-  @media screen and (min-width: 768px) {
+  @include mintab {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -44,7 +44,7 @@
   &:not(:last-child) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 1200px) {
+  @include mindesk {
     &:last-child {
       margin-left: auto;
     }
@@ -55,7 +55,7 @@
   }
 }
 .subscription {
-  @media screen and (min-width: 1200px) {
+  @include mindesk {
     display: flex;
   }
 }
@@ -78,16 +78,16 @@
   &:focus {
     border-color: var(--brandcolor);
   }
-  @media screen and (max-width: 1199px) {
+  @include maxtab {
     margin-bottom: 20px;
     width: 450px;
   }
-  @media screen and (max-width: 479px) {
+  @include aftmintel {
     margin-bottom: 20px;
     width: 90vw;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mindesk {
     width: 358px;
   }
 }

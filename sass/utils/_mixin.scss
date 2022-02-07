@@ -4,3 +4,44 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+@mixin aftmintel {
+  @media screen and (max-width: 479px) {
+    @content;
+  }
+}
+@mixin mintel {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tel {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin maxtel {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mintab {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin maxtab {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin mindesk {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

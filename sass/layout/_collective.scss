@@ -1,9 +1,9 @@
 .collective {
   background-color: var(--backgroundcolor2);
-  @media screen and (max-width: 767px) {
+  @include maxtel {
     --card-amt: 1;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tab {
     --card-amt: 2;
   }
 }
@@ -26,7 +26,7 @@
 .collective-caption {
   padding-top: 30px;
   padding-bottom: 30px;
-  @media screen and (max-width: 1199px) {
+ @include maxtab {
     padding-bottom: 24px;
   }
 }

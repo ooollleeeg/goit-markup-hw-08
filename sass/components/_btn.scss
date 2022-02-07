@@ -21,7 +21,7 @@
   align-items: center;
   text-align: center;
   color: var(--whitetextcolor);
-  @media screen and (max-width: 1199px) {
+  @include maxtab {
     margin-right: auto;
     margin-left: auto;
   }

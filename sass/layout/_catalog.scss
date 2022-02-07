@@ -2,10 +2,10 @@
   padding-top: 0;
   padding-bottom: 20px;
   --card-amt: 3;
-  @media screen and (max-width: 767px) {
+  @include maxtel {
     --card-amt: 1;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tab {
     --card-amt: 2;
   }
 }

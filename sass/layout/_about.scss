@@ -1,8 +1,8 @@
 .about {
-  @media screen and (max-width: 767px) {
+  @include maxtel {
     --card-amt: 1;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include tab {
     --card-amt: 2;
   }
 }
@@ -10,6 +10,9 @@
   @include font(14px, null, 1.14, null);
   text-transform: uppercase;
   margin-bottom: 10px;
+  @include maxtel {
+    text-align: center;
+  }
 }
 
 .about-list__icon {
