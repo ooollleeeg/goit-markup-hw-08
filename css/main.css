@@ -872,6 +872,7 @@ body {
   }
   .foot__item:not(:last-child) {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
