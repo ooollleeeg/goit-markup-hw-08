@@ -57,6 +57,6 @@
   display: inline;
   @include font(12px, null, 1.16, 0.03em);
   @include mindesk {
-    @include font(12px, null, null, null);
+    @include font(14px, null, null, null);
   }
 }

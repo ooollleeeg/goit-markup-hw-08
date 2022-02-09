@@ -20,33 +20,92 @@
 
 <body>
     <!-- раздел с логотипом, навигацией и контактами -->
-  <!-- <header class="head">
+  <header class="head">
     <div class="container header__container">
+      <a lang="en" class="link logo-link" href="./index.html">Web<span class="logo--header">Studio</span>
+      </a>
       <nav class="site-navigation">
-        <a lang="en" class="link logo-link" href="./index.html">Web<span class="logo--header">Studio</span>
-        </a>
         <ul class="list site-navigation__list">
-          <li class="site-navigation__item"><a class="link site-navigation__link" href="./index.html">Студия</a></li>
-          <li class="site-navigation__item"><a class="link site-navigation__link current" href="./portfolio.html">Портфолио</a></li>
+          <li class="site-navigation__item"><a class="link site-navigation__link" href="./index.html">Студия</a>
+          </li>
+          <li class="site-navigation__item"><a class="link site-navigation__link current" href="./portfolio.html">Портфолио</a>
+          </li>
           <li class="site-navigation__item"><a class="link site-navigation__link" href="">Контакты</a></li>
         </ul>
       </nav>
       <ul class="list contakts-list">
         <li class="contakts-list__item">
-          <a class="link site-navigation__link " href="mailto:info@devstudio.com">
+          <a class="link site-navigation__link contacts__link" href="mailto:info@devstudio.com">
             <svg class="contakts-list__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li class="contakts-item">
-          <a class="link site-navigation__link" href="tel:+380961111111">
+          <a class="link site-navigation__link contacts__link" href="tel:+380961111111">
             <svg class="contakts-list__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone" width="10" height="16"></use>
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="openmenu-button" data-Menu-open>
+        <svg class="openmenu__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
-  </header> -->
+  
+    <div class="mob-menu is-hidden" data-Menu>
+      <div class="container">
+        <div class="mob-menu__top">
+          <button type="button" class="menu-close__btn" data-Menu-close>
+            <svg class="menu-close__icon" width="18.67" height="18.67">
+              <use href="./images/icons.svg#icon-close" />
+            </svg>
+          </button>
+          <ul class="list mob-menu__list">
+            <li class="mob-menu__item"><a class="link mob-menu__link" href="./index.html">Студия</a></li>
+            <li class="mob-menu__item"><a class="link mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="mob-menu__item"><a class="link mob-menu__link" href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu__bottom">
+          <ul class="list mob-contakts-list">
+            <li class="mob-contakts__item">
+              <a class="link contakts-tel__link" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="mob-contakts__item">
+              <a class="link contakts-post__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </li>
+  
+          </ul>
+          <ul class="mob-social__list list">
+            <li class="mob-social__item">
+              <a class="link mob-social__link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                Instagram
+              </a>
+            </li>
+            <li class="mob-social__item">
+              <a class="link mob-social__link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                Twitter
+              </a>
+            </li>
+            <li class="mob-social__item">
+              <a class="link mob-social__link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                Facebook
+              </a>
+            </li>
+            <li class="mob-social__item">
+              <a class="link mob-social__link" href="" target="_blank" rel="noreferrer noopener nofollow">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
     <!--catalog  -->
     <main class="catalog">
       <section class="section">
@@ -332,6 +391,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
