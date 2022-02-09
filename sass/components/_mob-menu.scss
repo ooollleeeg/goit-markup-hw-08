@@ -1,3 +1,6 @@
+.is-hidden .mob-menu {
+  transform: scale(0.3);
+}
 .mob-menu {
   background-color: var(--whitetextcolor);
   position: fixed;
@@ -10,6 +13,8 @@
   padding-bottom: 48px;
   padding-left: 25px;
   padding-right: 15px;
+  transform: scale(1);
+  transition: transform var(--transition1);
   @include mintab {
     display: none;
   }
@@ -37,8 +42,7 @@
     color: var(--brandcolor);
   }
 }
-.mob-contakts-list {
-}
+
 .contakts-tel__link {
   display: block;
   @include font(40px, 500, 1.17, 0.02em);

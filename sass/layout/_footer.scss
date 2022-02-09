@@ -51,10 +51,12 @@
   @include mindesk {
     &:last-child {
       margin-left: auto;
+      text-align: left;
     }
     &:not(:last-child) {
       margin-right: 70px;
       margin-bottom: 0;
+      text-align: left;
     }
   }
 }

@@ -374,6 +374,10 @@ body {
   }
 }
 
+.is-hidden .mob-menu {
+  transform: scale(0.3);
+}
+
 .mob-menu {
   background-color: var(--whitetextcolor);
   position: fixed;
@@ -386,6 +390,8 @@ body {
   padding-bottom: 48px;
   padding-left: 25px;
   padding-right: 15px;
+  transform: scale(1);
+  transition: transform var(--transition1);
   overflow-y: scroll;
 }
 
@@ -1176,10 +1182,12 @@ body {
 @media screen and (min-width: 1200px) {
   .foot__item:last-child {
     margin-left: auto;
+    text-align: left;
   }
   .foot__item:not(:last-child) {
     margin-right: 70px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
