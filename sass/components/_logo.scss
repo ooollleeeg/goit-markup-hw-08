@@ -1,8 +1,10 @@
 .logo-link {
   font-family: Raleway;
-  @include font(26px, 700, 1.19, 0.03em);
-
+  @include font(24px, 700, 1.19, 0.03em);
   color: var(--brandcolor);
+  @include mindesk {
+    @include font(26px, null, null, null);
+  }
 }
 
 .logo--header {
@@ -10,7 +12,10 @@
 }
 
 .head .logo-link {
-  margin-right: 93px;
+  margin-right: 86px;
+  @include mindesk {
+    margin-right: 93px;
+  }
 }
 .foot .logo-link {
   margin-bottom: 20px;

@@ -2,6 +2,9 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  @include aftmintel {
+    width: 100%;
+  }
   @include mintel {
     width: 480px;
   }

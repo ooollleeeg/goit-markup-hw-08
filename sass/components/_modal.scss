@@ -47,10 +47,16 @@
     border-color: var(--brandcolor);
   }
 }
-
 .modal__text {
   text-align: center;
   @include font(20px, 700, 1.15, null);
   color: var(--textcolor);
   margin-bottom: 12px;
+}
+.assent-text {
+  display: inline;
+  @include font(12px, null, 1.16, 0.03em);
+  @include mindesk {
+    @include font(12px, null, null, null);
+  }
 }

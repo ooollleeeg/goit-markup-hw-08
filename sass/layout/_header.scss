@@ -5,11 +5,14 @@
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
 .site-navigation {
-  display: flex;
-  align-items: center;
+  display: none;
+  @include mintab {
+    display: flex;
+    align-items: center;
+  }
 }
 .site-navigation__list {
   display: flex;
@@ -17,9 +20,16 @@
 }
 
 .contakts-list {
-  display: inline-flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+  @include mindesk {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  @include mintab {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .site-navigation__item {
@@ -27,9 +37,12 @@
     margin-right: 50px;
   }
 }
+
 .contakts-list__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @include mindesk {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .site-navigation__list {
@@ -47,6 +60,11 @@
   &:focus {
     color: var(--brandcolor);
   }
+}
+.contacts__link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 84px;
 }
 .current {
   color: var(--brandcolor);
@@ -67,4 +85,26 @@
 .contakts-list__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+.openmenu-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &:focus,
+  &:hover {
+    border-color: var(--brandcolor);
+  }
+
+  @include mintab {
+    display: none;
+  }
+}
+.openmenu__icon {
+  transition: fill var(--transition1);
+  .openmenu-button:focus &,
+  .openmenu-button:hover & {
+    fill: var(--brandcolor);
+  }
 }
