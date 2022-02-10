@@ -1,5 +1,7 @@
-.is-hidden .mob-menu {
-  transform: scale(0.3);
+.mob-menu.is-hidden {
+  left: 100%;
+  opacity: 1;
+  transition: opacity var(--transition1), visibility var(--transition1);
 }
 .mob-menu {
   background-color: var(--whitetextcolor);
@@ -13,8 +15,7 @@
   padding-bottom: 48px;
   padding-left: 25px;
   padding-right: 15px;
-  transform: scale(1);
-  transition: transform var(--transition1);
+  transition: left var(--transition1), visibility var(--transition1);
   @include mintab {
     display: none;
   }
