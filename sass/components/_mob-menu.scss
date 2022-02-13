@@ -1,9 +1,16 @@
 .mob-menu.is-hidden {
+  opacity: 0;
   transform: scale(0.5);
   transition: opacity var(--transition1), visibility var(--transition1);
 }
 
 .mob-menu {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--whitetextcolor);
   position: fixed;
   top: 0;
@@ -11,39 +18,41 @@
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  padding-top: 10px;
+  padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 25px;
-  padding-right: 15px;
   right: 100%;
   opacity: 1;
   transform: scale(1);
-  transition: transform var(--transition1);
+  transition: opacity var(--transition1), transform var(--transition1);
   @include mintab {
     display: none;
   }
   overflow-y: scroll;
-  .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 }
-.mob-menu__list {
-  padding-top: 28px;
+.mob-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
 }
 .mob-menu__link {
   @include font(40px, 500, 1.17, 0.02em);
   color: var(--textcolor);
   display: block;
+  transition: color var(--transition1);
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 12px;
-  transition: color var(--transition1);
+
   &:hover,
   &:focus {
     color: var(--brandcolor);
+  }
+}
+.mob-contakts-list {
+  margin-bottom: 54px;
+}
+.mob-contakts__item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 
@@ -56,39 +65,35 @@
   color: var(--brandcolor);
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 12px;
 }
 .contakts-post__link {
   display: block;
   @include font(24px, 500, 1.17, 0.02em);
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 64px;
 }
 .mob-social__list {
   display: flex;
   flex-wrap: wrap;
-  @include aftmintel {
-    display: block;
-  }
+  margin-top: -15px;
+  margin-left: -15px;
 }
 .mob-social__item {
-  display: block;
+  margin-top: 15px;
+  margin-left: 15px;
 
-  margin-bottom: 15px;
-  @include tel {
-    display: inline;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 10px;
-    padding-right: 10px;
-    &:last-child {
-      border: none;
-    }
-    &:first-child {
-      padding-left: 0;
-    }
+  display: inline;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
+  padding-right: 10px;
+  &:last-child {
+    border: none;
+  }
+  &:first-child {
+    padding-left: 0;
   }
 }
+
 .mob-social__link {
   @include font(18px, 500, 1.22, 0.02em);
 
@@ -98,8 +103,8 @@
   display: block;
   margin-left: auto;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   width: 40px;
   height: 40px;
   border: none;

@@ -1,16 +1,11 @@
 .card-set {
-  @include mintel {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-  }
-  margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .card-set__item {
-  @include mintel {
-    flex-basis: calc(100% / var(--card-amt) - 30px);
-    margin-left: 30px;
-  }
-
-  margin-bottom: 30px;
+  flex-basis: calc(100% / var(--card-amt) - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }

@@ -30,8 +30,9 @@
   @include font(18px, null, 1.55, null);
   padding: 63px 24px;
   height: 100%;
+  opacity: 0;
   transform: translateY(100%);
-  transition: transform var(--transition1);
+  transition: opacity var(--transition1), transform var(--transition1);
   overflow: auto;
   &::-webkit-scrollbar {
     width: 5px;
@@ -46,11 +47,13 @@
   .catalog-item__link:hover &,
   .catalog-item__link:focus & {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 .catalog-item__link {
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition1);
   &:hover,
   &:focus {
@@ -59,6 +62,7 @@
   }
 }
 .catalog-item__caption {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #ececec;
 }
